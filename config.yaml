@@ -1,0 +1,61 @@
+company:
+  name: "대한전선"
+  ticker: "001440"
+  corp_code: "00113207"
+  fs_div: "CFS"
+  start_year: 2010
+  report_codes:
+    annual: "11011"
+    half: "11012"
+    q1: "11013"
+    q3: "11014"
+
+peers:
+  - name: "LS전선"
+    ticker: ""
+    note: "비상장"
+  - name: "가온전선"
+    ticker: "000500"
+    corp_code: "00104768"
+    note: "KOSPI"
+  - name: "일진전기"
+    ticker: "103590"
+    corp_code: ""
+    note: "KOSPI"
+  - name: "대원전선"
+    ticker: "006340"
+    corp_code: "00260392"
+    note: "KOSPI"
+  - name: "LS에코에너지"
+    ticker: "229640"
+    corp_code: ""
+    note: "KOSPI"
+
+metrics:
+  accounts:
+    revenue: ["매출액", "수익(매출액)", "Revenue"]
+    operating_profit: ["영업이익", "영업이익(손실)", "Operating income"]
+    net_income: ["당기순이익", "당기순이익(손실)", "Profit (loss) for the period"]
+    assets: ["자산총계", "Total assets"]
+    liabilities: ["부채총계", "Total liabilities"]
+    equity: ["자본총계", "Total equity"]
+    current_assets: ["유동자산", "Current assets"]
+    current_liabilities: ["유동부채", "Current liabilities"]
+    cash: ["현금및현금성자산", "현금및현금성자산", "Cash and cash equivalents"]
+    operating_cash_flow: ["영업활동현금흐름", "영업활동으로 인한 현금흐름", "Net cash flows from operating activities"]
+    investing_cash_flow: ["투자활동현금흐름", "투자활동으로 인한 현금흐름", "Net cash flows from investing activities"]
+    financing_cash_flow: ["재무활동현금흐름", "재무활동으로 인한 현금흐름", "Net cash flows from financing activities"]
+    capex: ["유형자산의 취득", "유형자산 취득", "Purchase of property, plant and equipment"]
+
+  ratios:
+    - revenue_growth
+    - operating_margin
+    - net_margin
+    - roe
+    - roa
+    - debt_ratio
+    - equity_ratio
+    - current_ratio
+    - cfo_margin
+    - fcf
+    - fcf_margin
