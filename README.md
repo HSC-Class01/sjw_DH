@@ -1,10 +1,10 @@
 # 대한전선 DART Financial Agent
 
-[![Dashboard](assets/dashboard-badge.svg)](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY/)
+[![Dashboard](assets/dashboard-badge.svg)](https://hsc-class01.github.io/sjw_DH/)
 
 ## 🔗 대시보드 바로가기
 
-[![Dashboard](assets/dashboard-badge.svg)](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY/)
+[![Dashboard](assets/dashboard-badge.svg)](https://hsc-class01.github.io/sjw_DH/)
 
 대한전선(001440)의 금융감독원 OpenDART 정기보고서 데이터를 자동 수집하고, 주요 재무수치 및 재무비율을 계산한 뒤 GitHub Pages 대시보드로 배포하는 데이터 에이전트입니다.
 
