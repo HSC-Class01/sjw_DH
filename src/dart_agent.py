@@ -1,5 +1,5 @@
 from __future__ import annotations
-import io, os, re, zipfile, json, time, logging
+import io, os, re, zipfile, json, time, logging, calendar
 from pathlib import Path
 from typing import Any
 import requests
@@ -108,9 +108,12 @@ def parse_structured(year: int, code: str, rows: list[dict[str, Any]]) -> list[d
 def find_filings(year: int, code: str) -> list[dict[str, Any]]:
     # Search the entire year in manageable date windows. This path supports the historical fallback.
     hits = []
+    # Annual reports are normally filed in the following calendar year.
+    filing_year = year + 1 if code == "11011" else year
     for month in range(1, 13):
-        start = f"{year}{month:02d}01"
-        end = f"{year}{month:02d}31"
+        start = f"{filing_year}{month:02d}01"
+        last_day = calendar.monthrange(filing_year, month)[1]
+        end = f"{filing_year}{month:02d}{last_day:02d}"
         data = get_json("list", {"corp_code": CONFIG["company"]["corp_code"], "bgn_de": start, "end_de": end, "page_no": 1, "page_count": 100})
         for row in data.get("list", []):
             nm = row.get("report_nm", "")
